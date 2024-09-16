@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             FetchRewardsCodingExerciseTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
+                    FetchRewardsCodingExerciseApp(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(
+fun FetchRewardsCodingExerciseApp(
     name: String,
     modifier: Modifier = Modifier
 ) {
@@ -47,8 +47,8 @@ fun Greeting(
     name = "My Preview",
 )
 @Composable
-fun GreetingPreview() {
+fun FetchRewardsCodingExercisePreview() {
     FetchRewardsCodingExerciseTheme {
-        Greeting("Android")
+        FetchRewardsCodingExerciseApp("Android")
     }
 }
