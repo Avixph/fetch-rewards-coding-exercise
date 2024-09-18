@@ -12,5 +12,7 @@ class FetchListsNetworkRepository(
 ) : FetchListsRepository {
     override suspend fun getFetchLists(): List<FetchListItem> {
         return fetchApiService.getLists()
+            .filterNot { it.name.isNullOrBlank() }
+            .filterNot { it.name.isNullOrEmpty() }
     }
 }

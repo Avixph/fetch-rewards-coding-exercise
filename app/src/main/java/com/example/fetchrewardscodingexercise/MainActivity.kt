@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             FetchRewardsCodingExerciseTheme {
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
+//                    modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background,
                 ) {
                     FetchRewardsCodingExerciseApp()

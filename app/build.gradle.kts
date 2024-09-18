@@ -71,6 +71,7 @@ dependencies {
     // Retrofit with Kotlin serialization Converter
     implementation(libs.retrofit2.kotlinx.serialization.converter)
     implementation(libs.okhttp)
+    implementation(libs.androidx.material.icons.extended)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

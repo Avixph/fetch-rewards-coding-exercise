@@ -25,16 +25,16 @@ fun HomeScreen(
 ) {
     when (fetchUiState) {
         is FetchUiState.Loading -> LoadingScreen(
-            modifier = modifier.fillMaxSize(),
+            modifier = modifier,
         )
         is FetchUiState.Success -> ListsScreen(
             fetchUiState.lists,
             contentPadding = contentPadding,
-            modifier = modifier.fillMaxSize(),
+            modifier = modifier,
         )
         is FetchUiState.Error -> ErrorScreen(
             retryAction,
-            modifier = modifier.fillMaxSize(),
+            modifier = modifier,
         )
     }
 }

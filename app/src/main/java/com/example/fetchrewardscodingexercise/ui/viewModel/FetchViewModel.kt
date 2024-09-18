@@ -37,8 +37,7 @@ class FetchViewModel(private val fetchListsRepository: FetchListsRepository) : V
         viewModelScope.launch {
             fetchUiState = FetchUiState.Loading
             fetchUiState = try {
-                val result = fetchListsRepository.getFetchLists()
-                println("${result.size}")
+//                val result = fetchListsRepository.getFetchLists()
                 FetchUiState.Success(
                     fetchListsRepository.getFetchLists()
                 )
@@ -47,7 +46,6 @@ class FetchViewModel(private val fetchListsRepository: FetchListsRepository) : V
             } catch (e: HttpException) {
                 FetchUiState.Error
             }
-
         }
     }
 
