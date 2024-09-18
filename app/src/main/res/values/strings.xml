@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Fetch Rewards Coding Exercise</string>
+    <string name="app_name_alt">Fetch Rewards Lists</string>
+    <string name="list_name">List %1$s Items</string>
+    <string name="loading_failed">Failed to load</string>
+    <string name="placeholder_result">Placeholder result text</string>
+    <string name="retry">Retry</string>
+    <string name="loading">Loading</string>
 </resources>

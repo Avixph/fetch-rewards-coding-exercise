@@ -2,19 +2,41 @@ package com.example.fetchrewardscodingexercise.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.fetchrewardscodingexercise.R
+
+val cabin = FontFamily(
+    Font(R.font.cabin, FontWeight.Normal),
+    Font(R.font.cabin_bold, FontWeight.Bold),
+)
 
 // Set of Material typography styles to start with
 val Typography = Typography(
     bodyLarge = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontFamily = cabin,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
-    )
+    ),
+    displaySmall = TextStyle(
+        fontFamily = cabin,
+        fontWeight = FontWeight.Bold,
+        fontSize = 20.sp,
+    ),
+    displayMedium = TextStyle(
+        fontFamily = cabin,
+        fontWeight = FontWeight.Bold,
+        fontSize = 20.sp,
+    ),
+    displayLarge = TextStyle(
+        fontFamily = cabin,
+        fontWeight = FontWeight.Normal,
+        fontSize = 30.sp,
+    ),
     /* Other default text styles to override
     titleLarge = TextStyle(
         fontFamily = FontFamily.Default,
